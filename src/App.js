@@ -13,7 +13,8 @@ function App() {
     <main>
       <section className='container'>
         <h2>{people.length} Birthdays Today</h2>
-        <List people={people} />
+        <List people={people} funcPeople={setPeople} />
+
         <button type='button' onClick={clearPeople}>
           Clear All
         </button>
